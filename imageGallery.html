@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Galley</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <!-- global container -->
+  <div class="flex items-center justify-center min-h-screen bg-cyan-50">
+    <!-- card container -->
+    <div class="bg-white p-6 m-3 space-y-10 shadow-2xl rounded-3xl md:p-40">
+      <!-- menu container -->
+      <div class="flex flex-col items-center justify-center space-y-3 md:flex-row md:space-y-0 md:space-x-8 md:justify-end">
+        <!-- menu items -->
+        <div class="group">
+          <a href="#">Vector</a>
+          <div class="mx-2 mt-3 border-black border-b-2 duration-500 opacity-0 group-hover:opacity-100"></div>
+          </div>
+        <div class="group">
+          <a href="#">Illustrations</a>
+          <div class="mx-2 mt-3 border-black border-b-2 duration-500 opacity-0 group-hover:opacity-100"></div>
+          </div>
+        <div class="group">
+          <a href="#">Images</a>
+          <div class="mx-2 mt-3 border-black border-b-2 duration-500 opacity-0 group-hover:opacity-100"></div>
+          </div>
+        <div class="group">
+          <a href="#">Icons</a>
+          <div class="mx-2 mt-3 border-black border-b-2 duration-500 opacity-0 group-hover:opacity-100"></div>
+          </div>
+      </div>
+      <!-- search container -->
+      <div class="flex flex-col space-y-5 md:flex-row md:space-y-0">
+        <input type="text" placeholder="Search" class="focus:outline-none md:w-80">
+        <!-- upload -->
+        <button class="py-3 px-3 text-sm font-medium bg-black text-white hover:bg-blue-700 transition-all duration-300 rounded-md shadow-lg">upload</button>
+      </div>
+      <div class="grid gap-4 md:grid-cols-3">
+        <div class="group relative">
+            <img src="images/image1.jpg" alt="" class="w-72">
+            <div class="absolute bg-black opacity-0 group-hover:opacity-100 bg-opacity-40 text-white duration-500 right-0 bottom-0 left-0 p-2 px-4">
+              <div class="flex justify-between">
+                <div class="font-normal">
+                  <p class="text-sm">abstract</p>
+                  <p class="text-sm">100 likes</p>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="group relative">
+            <img src="images/image2.jpg" alt="" class="w-72">
+            <div class="absolute bg-black opacity-0 group-hover:opacity-100 bg-opacity-40 text-white duration-500 right-0 bottom-0 left-0 p-2 px-4">
+              <div class="flex justify-between">
+                <div class="font-normal">
+                  <p class="text-sm">abstract</p>
+                  <p class="text-sm">100 likes</p>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="group relative">
+            <img src="images/image3.jpg" alt="" class="w-72">
+            <div class="absolute bg-black opacity-0 group-hover:opacity-100 bg-opacity-40 text-white duration-500 right-0 bottom-0 left-0 p-2 px-4">
+              <div class="flex justify-between">
+                <div class="font-normal">
+                  <p class="text-sm">abstract</p>
+                  <p class="text-sm">100 likes</p>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

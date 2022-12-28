@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Modal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="flex items-center  bg-slate-700 justify-center h-screen">
+      <!-- Card Container -->
+      <div
+        class="rounded-2xl shadow-2xl bg-gray-50 max-w-xs md:max-w-md flex flex-col my-4 px-7 md:flex-row"
+      >
+        <!-- image  -->
+        <img
+          src="istockphoto-1177415728-1024x1024.jpg"
+          alt=""
+          class="w-70 h-52 md:w-60
+          transform hover:scale-105 mx-auto duration-200 object-fill"
+        />
+
+        <!-- product content -->
+        <div class="text-center mt-2 justify-center">
+          <button class="rounded text-xs px-2 bg-black text-purple-50">
+            Free Shipping
+          </button>
+          <h2 class="text-sm font-serif font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, cupiditate.</h2>
+          <div class="mt-5"></div>
+          <span class="text-xs ">$700</span>
+          <h2 class="text-xl font-bold">$599</h2>
+          <p class="text-xs  text-slate-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, magnam.</p>
+          <div class="group">
+            <button class="rounded-lg bg-blue-700 hover:border-t-zinc-800 hover:border-b-2 transition-all duration-200 border  text-white w-full mt-2">
+                <div class="p-1 text-sm font-semibold">Add to cart</div>
+            </button>
+          </div>
+          <div class="flex items-center space-x-3 mt-3 group">
+                <div class="rounded-full bg-green-700 w-3 h-3 group-hover:animate-ping"></div>
+                <div class="text-sm">50+ stocks</div>
+          </div>
+          <div class="flex mt-2 flex-col space-y-4 md:space-y-0 md:flex-row md:space-x-4">
+            <button class=" md:w-full text-sm justify-center rounded-lg border border-gray-600 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200 py-3 px-5 "><span>Add to Wishlist</span></button>
+            <button class=" md:w-full text-sm justify-center rounded-lg border border-gray-600 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200 py-3 px-5 "><span>Buy Now</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
